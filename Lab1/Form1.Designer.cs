@@ -29,7 +29,7 @@ namespace Lab1
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.comboBoxAct = new System.Windows.Forms.ComboBox();
             this.textBoxA = new System.Windows.Forms.TextBox();
             this.textBoxB = new System.Windows.Forms.TextBox();
@@ -39,24 +39,26 @@ namespace Lab1
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(556, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 250);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pictureBox.Location = new System.Drawing.Point(557, 12);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(250, 250);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
             // 
             // comboBoxAct
             // 
-            this.comboBoxAct.FormattingEnabled = true;
-            this.comboBoxAct.Location = new System.Drawing.Point(139, 116);
+            this.comboBoxAct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxAct.Location = new System.Drawing.Point(139, 112);
             this.comboBoxAct.Name = "comboBoxAct";
-            this.comboBoxAct.Size = new System.Drawing.Size(121, 23);
+            this.comboBoxAct.Size = new System.Drawing.Size(128, 29);
             this.comboBoxAct.TabIndex = 1;
+            this.comboBoxAct.SelectedIndexChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxA
             // 
@@ -64,17 +66,19 @@ namespace Lab1
             this.textBoxA.Name = "textBoxA";
             this.textBoxA.Size = new System.Drawing.Size(121, 23);
             this.textBoxA.TabIndex = 2;
+            this.textBoxA.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxB
             // 
-            this.textBoxB.Location = new System.Drawing.Point(266, 116);
+            this.textBoxB.Location = new System.Drawing.Point(273, 116);
             this.textBoxB.Name = "textBoxB";
             this.textBoxB.Size = new System.Drawing.Size(121, 23);
             this.textBoxB.TabIndex = 3;
+            this.textBoxB.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(424, 116);
+            this.textBoxResult.Location = new System.Drawing.Point(431, 116);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
             this.textBoxResult.Size = new System.Drawing.Size(119, 23);
@@ -84,7 +88,7 @@ namespace Lab1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(393, 116);
+            this.label1.Location = new System.Drawing.Point(400, 116);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 25);
             this.label1.TabIndex = 5;
@@ -114,7 +118,7 @@ namespace Lab1
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(178, 88);
+            this.label5.Location = new System.Drawing.Point(185, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 25);
             this.label5.TabIndex = 9;
@@ -124,7 +128,7 @@ namespace Lab1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(453, 88);
+            this.label2.Location = new System.Drawing.Point(460, 88);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 25);
             this.label2.TabIndex = 10;
@@ -134,7 +138,7 @@ namespace Lab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(818, 272);
+            this.ClientSize = new System.Drawing.Size(819, 271);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -144,11 +148,13 @@ namespace Lab1
             this.Controls.Add(this.textBoxB);
             this.Controls.Add(this.textBoxA);
             this.Controls.Add(this.comboBoxAct);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox);
+            this.MaximumSize = new System.Drawing.Size(835, 310);
+            this.MinimumSize = new System.Drawing.Size(835, 310);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,7 +162,7 @@ namespace Lab1
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.ComboBox comboBoxAct;
         private System.Windows.Forms.TextBox textBoxA;
         private System.Windows.Forms.TextBox textBoxB;
