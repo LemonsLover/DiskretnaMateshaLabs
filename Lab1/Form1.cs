@@ -18,10 +18,12 @@ namespace Lab1
     {
         Set set1;
         Set set2;
+        Label activeLabel;
 
         public Form1()
         {
             InitializeComponent();
+            textBoxVarNameInput.LostFocus += textBoxVarNameInput_LostFocus;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,8 +33,8 @@ namespace Lab1
             comboBoxAct.Items.Add(Action.Різницю);
             comboBoxAct.Items.Add(Action.СиметричнаРізниця);
             comboBoxAct.SelectedIndex = 1;
-            textBoxA.Text = "1,2,3,4,5,6";
-            textBoxB.Text = "4,5.5,6,7,8,9";
+            textBoxInput1.Text = "1,2,3,4,5,6";
+            textBoxInput2.Text = "4,5.5,6,7,8,9";
         }
 
         private List<float> Culculate(Action action, string setA, string setB)
@@ -66,8 +68,30 @@ namespace Lab1
 
         private void textBox_TextChanged(object sender, EventArgs e)
         {
-            var resultText = string.Join(',', Culculate((Action)comboBoxAct.SelectedItem, textBoxA.Text, textBoxB.Text) ?? new List<float>());
+            var resultText = string.Join(',', Culculate((Action)comboBoxAct.SelectedItem, textBoxInput1.Text, textBoxInput2.Text) ?? new List<float>());
             textBoxResult.Text = string.IsNullOrEmpty(resultText) ? "ERROR" : resultText;
+        }
+
+        private void labelInput_DoubleClick(object sender, EventArgs e)
+        {
+            activeLabel = sender as Label; 
+            textBoxVarNameInput.Visible = true;
+            textBoxVarNameInput.Location = activeLabel.Location;
+            textBoxVarNameInput.Text = activeLabel.Text;
+        }
+
+        private void textBoxVarNameInput_LostFocus(object sender, EventArgs e)
+        {
+            var textBox = sender as TextBox;
+            textBox.Visible = false;
+            activeLabel = null;
+        }
+
+        private void textBoxVarNameInput_TextChanged(object sender, EventArgs e)
+        {
+            var textBox = sender as TextBox;
+            activeLabel.Text = string.IsNullOrEmpty(textBox.Text) ? activeLabel.Text : textBox.Text;
+            textBox.Size = activeLabel.Size;
         }
     }
 }

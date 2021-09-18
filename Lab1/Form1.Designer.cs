@@ -31,14 +31,16 @@ namespace Lab1
         {
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.comboBoxAct = new System.Windows.Forms.ComboBox();
-            this.textBoxA = new System.Windows.Forms.TextBox();
-            this.textBoxB = new System.Windows.Forms.TextBox();
+            this.textBoxInput1 = new System.Windows.Forms.TextBox();
+            this.textBoxInput2 = new System.Windows.Forms.TextBox();
             this.textBoxResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelInput1 = new System.Windows.Forms.Label();
+            this.labelInput2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBoxVarNameInput = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,21 +62,21 @@ namespace Lab1
             this.comboBoxAct.TabIndex = 1;
             this.comboBoxAct.SelectedIndexChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // textBoxA
+            // textBoxInput1
             // 
-            this.textBoxA.Location = new System.Drawing.Point(12, 116);
-            this.textBoxA.Name = "textBoxA";
-            this.textBoxA.Size = new System.Drawing.Size(121, 23);
-            this.textBoxA.TabIndex = 2;
-            this.textBoxA.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBoxInput1.Location = new System.Drawing.Point(12, 116);
+            this.textBoxInput1.Name = "textBoxInput1";
+            this.textBoxInput1.Size = new System.Drawing.Size(121, 23);
+            this.textBoxInput1.TabIndex = 2;
+            this.textBoxInput1.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
-            // textBoxB
+            // textBoxInput2
             // 
-            this.textBoxB.Location = new System.Drawing.Point(273, 116);
-            this.textBoxB.Name = "textBoxB";
-            this.textBoxB.Size = new System.Drawing.Size(121, 23);
-            this.textBoxB.TabIndex = 3;
-            this.textBoxB.TextChanged += new System.EventHandler(this.textBox_TextChanged);
+            this.textBoxInput2.Location = new System.Drawing.Point(273, 116);
+            this.textBoxInput2.Name = "textBoxInput2";
+            this.textBoxInput2.Size = new System.Drawing.Size(121, 23);
+            this.textBoxInput2.TabIndex = 3;
+            this.textBoxInput2.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // textBoxResult
             // 
@@ -94,25 +96,27 @@ namespace Lab1
             this.label1.TabIndex = 5;
             this.label1.Text = "=";
             // 
-            // label3
+            // labelInput1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(58, 88);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "A";
+            this.labelInput1.AutoSize = true;
+            this.labelInput1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelInput1.Location = new System.Drawing.Point(57, 84);
+            this.labelInput1.Name = "labelInput1";
+            this.labelInput1.Size = new System.Drawing.Size(24, 25);
+            this.labelInput1.TabIndex = 7;
+            this.labelInput1.Text = "A";
+            this.labelInput1.DoubleClick += new System.EventHandler(this.labelInput_DoubleClick);
             // 
-            // label4
+            // labelInput2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(315, 88);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 25);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "B";
+            this.labelInput2.AutoSize = true;
+            this.labelInput2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelInput2.Location = new System.Drawing.Point(314, 84);
+            this.labelInput2.Name = "labelInput2";
+            this.labelInput2.Size = new System.Drawing.Size(23, 25);
+            this.labelInput2.TabIndex = 8;
+            this.labelInput2.Text = "B";
+            this.labelInput2.DoubleClick += new System.EventHandler(this.labelInput_DoubleClick);
             // 
             // label5
             // 
@@ -134,25 +138,46 @@ namespace Lab1
             this.label2.TabIndex = 10;
             this.label2.Text = "result";
             // 
+            // textBoxVarNameInput
+            // 
+            this.textBoxVarNameInput.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxVarNameInput.Location = new System.Drawing.Point(198, 12);
+            this.textBoxVarNameInput.Name = "textBoxVarNameInput";
+            this.textBoxVarNameInput.Size = new System.Drawing.Size(24, 33);
+            this.textBoxVarNameInput.TabIndex = 11;
+            this.textBoxVarNameInput.Visible = false;
+            this.textBoxVarNameInput.TextChanged += new System.EventHandler(this.textBoxVarNameInput_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 247);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(240, 15);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "* Double click on variable name to change it";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 271);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxVarNameInput);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelInput2);
+            this.Controls.Add(this.labelInput1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxResult);
-            this.Controls.Add(this.textBoxB);
-            this.Controls.Add(this.textBoxA);
+            this.Controls.Add(this.textBoxInput2);
+            this.Controls.Add(this.textBoxInput1);
             this.Controls.Add(this.comboBoxAct);
             this.Controls.Add(this.pictureBox);
             this.MaximumSize = new System.Drawing.Size(835, 310);
             this.MinimumSize = new System.Drawing.Size(835, 310);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Lab1 by Yehor Ovseiukov";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
@@ -164,14 +189,16 @@ namespace Lab1
 
         private System.Windows.Forms.PictureBox pictureBox;
         private System.Windows.Forms.ComboBox comboBoxAct;
-        private System.Windows.Forms.TextBox textBoxA;
-        private System.Windows.Forms.TextBox textBoxB;
+        private System.Windows.Forms.TextBox textBoxInput1;
+        private System.Windows.Forms.TextBox textBoxInput2;
         private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelInput1;
+        private System.Windows.Forms.Label labelInput2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxVarNameInput;
+        private System.Windows.Forms.Label label3;
     }
 }
 
