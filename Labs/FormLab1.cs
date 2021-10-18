@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
 using Lab1.Properties;
+using Lab1.Enums;
 
 namespace Lab1
 {
@@ -14,19 +15,19 @@ namespace Lab1
         СиметричнаРізниця,
     }
 
-    public partial class Form1 : Form
+    public partial class FormLab1 : Form
     {
         Set set1;
         Set set2;
         Label activeLabel;
 
-        public Form1()
+        public FormLab1()
         {
             InitializeComponent();
             textBoxVarNameInput.LostFocus += textBoxVarNameInput_LostFocus;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void FormLab1_Load(object sender, EventArgs e)
         {
             comboBoxAct.Items.Add(Action.Обєднання);
             comboBoxAct.Items.Add(Action.Переріз);
@@ -41,8 +42,8 @@ namespace Lab1
         {
             try
             {
-                this.set1 = new Set(setA.Split(',').Select(float.Parse).ToList());
-                this.set2 = new Set(setB.Split(',').Select(float.Parse).ToList());
+                this.set1 = new Set(setA);
+                this.set2 = new Set(setB);
                 switch (action)
                 {
                     case Action.Обєднання:
@@ -69,7 +70,7 @@ namespace Lab1
         private void textBox_TextChanged(object sender, EventArgs e)
         {
             var resultText = string.Join(',', Culculate((Action)comboBoxAct.SelectedItem, textBoxInput1.Text, textBoxInput2.Text) ?? new List<float>());
-            textBoxResult.Text = string.IsNullOrEmpty(resultText) ? "ERROR" : resultText;
+            textBoxResult.Text = string.IsNullOrEmpty(resultText) ? "" : resultText;
         }
 
         private void labelInput_DoubleClick(object sender, EventArgs e)
@@ -92,6 +93,17 @@ namespace Lab1
             var textBox = sender as TextBox;
             activeLabel.Text = string.IsNullOrEmpty(textBox.Text) ? activeLabel.Text : textBox.Text;
             textBox.Size = activeLabel.Size;
+        }
+
+        private void buttonMenu_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Menu().Show();
+        }
+
+        private void FormLab1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
