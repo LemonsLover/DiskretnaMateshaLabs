@@ -1,5 +1,5 @@
 ﻿
-namespace Lab1
+namespace Labs
 {
     partial class FormLab2
     {
@@ -129,6 +129,7 @@ namespace Lab1
             this.Controls.Add(this.labelA);
             this.Controls.Add(this.dataGridViewSetsRelations);
             this.Name = "FormLab2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormLab2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab2_FormClosed);
             this.Load += new System.EventHandler(this.FormLab2_Load);

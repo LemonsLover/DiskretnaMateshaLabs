@@ -1,5 +1,5 @@
 ﻿
-namespace Lab1
+namespace Labs
 {
     partial class FormLab1
     {
@@ -41,7 +41,6 @@ namespace Lab1
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxVarNameInput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.buttonMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,22 +157,11 @@ namespace Lab1
             this.label3.TabIndex = 12;
             this.label3.Text = "* Double click on variable name to change it";
             // 
-            // buttonMenu
-            // 
-            this.buttonMenu.Location = new System.Drawing.Point(12, 12);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(75, 23);
-            this.buttonMenu.TabIndex = 13;
-            this.buttonMenu.Text = "Menu";
-            this.buttonMenu.UseVisualStyleBackColor = true;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
-            // 
             // FormLab1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(819, 271);
-            this.Controls.Add(this.buttonMenu);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBoxVarNameInput);
             this.Controls.Add(this.label2);
@@ -189,6 +177,7 @@ namespace Lab1
             this.MaximumSize = new System.Drawing.Size(835, 310);
             this.MinimumSize = new System.Drawing.Size(835, 310);
             this.Name = "FormLab1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lab1 by Yehor Ovseiukov";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab1_FormClosed);
             this.Load += new System.EventHandler(this.FormLab1_Load);
@@ -212,7 +201,6 @@ namespace Lab1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxVarNameInput;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button buttonMenu;
     }
 }
 

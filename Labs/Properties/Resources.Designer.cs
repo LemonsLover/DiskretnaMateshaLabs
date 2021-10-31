@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Lab1.Properties {
+namespace Labs.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Lab1.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Lab1.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Labs.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -106,15 +106,6 @@ namespace Lab1.Properties {
         internal static System.Drawing.Bitmap union {
             get {
                 object obj = ResourceManager.GetObject("union", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap unionoOhu {
-            get {
-                object obj = ResourceManager.GetObject("unionohu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

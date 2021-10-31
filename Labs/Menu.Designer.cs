@@ -1,5 +1,5 @@
 ﻿
-namespace Lab1
+namespace Labs
 {
     partial class Menu
     {
@@ -63,6 +63,7 @@ namespace Lab1
             this.MaximumSize = new System.Drawing.Size(210, 370);
             this.MinimumSize = new System.Drawing.Size(210, 370);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.ResumeLayout(false);

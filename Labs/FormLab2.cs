@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Lab1
+namespace Labs
 {
     public partial class FormLab2 : Form
     {
@@ -75,7 +75,8 @@ namespace Lab1
 
         private void FormLab2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Application.Exit();
+            this.Hide();
+            new Menu().Show();
         }
     }
 }

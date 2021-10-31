@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Lab1.csproj": {}
+    "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Lab1.csproj": {
+    "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Lab1.csproj",
-        "projectName": "Lab1",
-        "projectPath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Lab1.csproj",
+        "projectUniqueName": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
+        "projectName": "Labs",
+        "projectPath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
         "packagesPath": "C:\\Users\\Yehor\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\obj\\",
         "projectStyle": "PackageReference",

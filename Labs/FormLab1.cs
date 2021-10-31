@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
-using Lab1.Properties;
-using Lab1.Enums;
+using Labs.Properties;
+using Labs.Enums;
 
-namespace Lab1
+namespace Labs
 {
     public enum Action
     {
@@ -95,15 +95,10 @@ namespace Lab1
             textBox.Size = activeLabel.Size;
         }
 
-        private void buttonMenu_Click(object sender, EventArgs e)
+        private void FormLab1_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
             new Menu().Show();
-        }
-
-        private void FormLab1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

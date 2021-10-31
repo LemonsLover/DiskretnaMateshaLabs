@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab1.Enums
+namespace Labs.Enums
 {
     public enum StatusCode
     {
