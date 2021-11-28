@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Labs.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,12 @@ namespace Labs
         {
             this.Hide();
             new FormLab2().Show();
+        }
+
+        private void buttonLab3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormLab3().Show();
         }
     }
 }

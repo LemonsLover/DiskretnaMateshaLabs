@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Linq;
 using Labs.Properties;
-using Labs.Enums;
 
 namespace Labs
 {

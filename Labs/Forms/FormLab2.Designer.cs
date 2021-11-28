@@ -130,7 +130,7 @@ namespace Labs
             this.Controls.Add(this.dataGridViewSetsRelations);
             this.Name = "FormLab2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormLab2";
+            this.Text = "Lab2 by Ovseiukov Yehor";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormLab2_FormClosed);
             this.Load += new System.EventHandler(this.FormLab2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSetsRelations)).EndInit();

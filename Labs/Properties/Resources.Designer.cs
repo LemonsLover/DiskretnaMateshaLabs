@@ -93,6 +93,36 @@ namespace Labs.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap orderedDistribution {
+            get {
+                object obj = ResourceManager.GetObject("orderedDistribution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap orderedDistributionRep {
+            get {
+                object obj = ResourceManager.GetObject("orderedDistributionRep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap permutation {
+            get {
+                object obj = ResourceManager.GetObject("permutation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap symetricDifference {
             get {
                 object obj = ResourceManager.GetObject("symetricDifference", resourceCulture);
@@ -106,6 +136,26 @@ namespace Labs.Properties {
         internal static System.Drawing.Bitmap union {
             get {
                 object obj = ResourceManager.GetObject("union", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unorderedDistribution {
+            get {
+                object obj = ResourceManager.GetObject("unorderedDistribution", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unorderedDistributionRep {
+            get {
+                object obj = ResourceManager.GetObject("unorderedDistributionRep", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
