@@ -38,5 +38,11 @@ namespace Labs
             this.Hide();
             new FormLab3().Show();
         }
+
+        private void buttonLab4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new FormLab4().Show();
+        }
     }
 }

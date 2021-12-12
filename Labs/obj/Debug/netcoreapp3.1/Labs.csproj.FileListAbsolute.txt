@@ -17,3 +17,5 @@ C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug
 C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.pdb
 C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.genruntimeconfig.cache
 C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.csproj.AssemblyReference.cache
+C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.Forms.FormLab4.resources
+C:\Users\Yehor\OneDrive\University\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.Forms.DialogInputForLab4Form.resources

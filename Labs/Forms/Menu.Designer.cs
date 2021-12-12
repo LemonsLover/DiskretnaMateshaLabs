@@ -32,6 +32,7 @@ namespace Labs
             this.buttonLab1 = new System.Windows.Forms.Button();
             this.buttonLab2 = new System.Windows.Forms.Button();
             this.buttonLab3 = new System.Windows.Forms.Button();
+            this.buttonLab4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonLab1
@@ -64,18 +65,29 @@ namespace Labs
             this.buttonLab3.UseVisualStyleBackColor = true;
             this.buttonLab3.Click += new System.EventHandler(this.buttonLab3_Click);
             // 
+            // buttonLab4
+            // 
+            this.buttonLab4.Location = new System.Drawing.Point(12, 173);
+            this.buttonLab4.Name = "buttonLab4";
+            this.buttonLab4.Size = new System.Drawing.Size(160, 50);
+            this.buttonLab4.TabIndex = 3;
+            this.buttonLab4.Text = "Lab4";
+            this.buttonLab4.UseVisualStyleBackColor = true;
+            this.buttonLab4.Click += new System.EventHandler(this.buttonLab4_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(194, 171);
+            this.ClientSize = new System.Drawing.Size(194, 231);
+            this.Controls.Add(this.buttonLab4);
             this.Controls.Add(this.buttonLab3);
             this.Controls.Add(this.buttonLab2);
             this.Controls.Add(this.buttonLab1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(210, 210);
+            this.MaximumSize = new System.Drawing.Size(210, 270);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(210, 210);
+            this.MinimumSize = new System.Drawing.Size(210, 270);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -89,5 +101,6 @@ namespace Labs
         private System.Windows.Forms.Button buttonLab1;
         private System.Windows.Forms.Button buttonLab2;
         private System.Windows.Forms.Button buttonLab3;
+        private System.Windows.Forms.Button buttonLab4;
     }
 }
