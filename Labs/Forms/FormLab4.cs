@@ -14,11 +14,11 @@ namespace Labs.Forms
     public partial class FormLab4 : Form
     {
         public static int weight = 0;
-        private Graph graph = new Graph();
+        private readonly Graph graph = new Graph();
         private int vertexsCount = 0;
-        private List<GraphVertex> selectedVertexes = new List<GraphVertex>();
-        private int dotSize = 50;
-        private int positionDelta;
+        private readonly List<GraphVertex> selectedVertexes = new List<GraphVertex>();
+        private const int dotSize = 50;
+        private readonly int positionDelta;
 
         public FormLab4()
         {
@@ -52,13 +52,19 @@ namespace Labs.Forms
 
             if (e.Button == MouseButtons.Left)
             {
-                var vetexName = (++vertexsCount).ToString();    
 
                 if (vertex != null)
+                {
                     graph.RemoveVertex(vertex);
+                    if (graph.Vertices.Count == 0)
+                        vertexsCount = 0;
+                }
                 else
+                {
+                    var vetexName = (++vertexsCount).ToString();
                     graph.AddVertex(vetexName, new Rectangle(e.Location.X - positionDelta, e.Location.Y - positionDelta,
                         dotSize, dotSize));
+                }
             }
             else if (vertex != null && e.Button == MouseButtons.Right)
             {
@@ -80,7 +86,14 @@ namespace Labs.Forms
                 }
             }
             richTextBoxLog.Text = "";
-            textBoxWeight.Text = PrimMethod(graph).ToString();
+            try
+            {
+                textBoxWeight.Text = PrimMethod(graph).ToString();
+            }
+            catch
+            {
+                textBoxWeight.Text = "";
+            }
             DrawGrapgh();
         }
 

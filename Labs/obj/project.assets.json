@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
+      "projectUniqueName": "C:\\Users\\Yehor\\OneDrive\\AllLabs\\2_course\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
       "projectName": "Labs",
-      "projectPath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
+      "projectPath": "C:\\Users\\Yehor\\OneDrive\\AllLabs\\2_course\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
       "packagesPath": "C:\\Users\\Yehor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\obj\\",
+      "outputPath": "C:\\Users\\Yehor\\OneDrive\\AllLabs\\2_course\\Diskretka\\DiskretnaMateshaLabs\\Labs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

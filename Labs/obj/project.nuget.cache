@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pTUlqGqJPxD71qAeU68+omQko56eoZqBxZ2EAc9GAntMn8Z2BVwehEYVrEntzjpLDyILQVhgU6DnOMmjHHKRag==",
+  "dgSpecHash": "xtRA3dUaS7Ppzrs9t3lv7/0emY5kZiIyow6o1jqmxYuOqtrPjQHwZymBndLaspP9QbeUcoC8NdkGTdjZR9/xWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yehor\\OneDrive\\University\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
+  "projectFilePath": "C:\\Users\\Yehor\\OneDrive\\AllLabs\\2_course\\Diskretka\\DiskretnaMateshaLabs\\Labs\\Labs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yehor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
   ],
