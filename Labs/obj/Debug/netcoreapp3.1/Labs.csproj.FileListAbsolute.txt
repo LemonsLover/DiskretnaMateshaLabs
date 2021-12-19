@@ -40,3 +40,5 @@ C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj
 C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.dll
 C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.pdb
 C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.genruntimeconfig.cache
+C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.Forms.FormLab5.resources
+C:\Users\Yehor\OneDrive\AllLabs\2_course\Diskretka\DiskretnaMateshaLabs\Labs\obj\Debug\netcoreapp3.1\Labs.Forms.DialogInputForLab5Form.resources
